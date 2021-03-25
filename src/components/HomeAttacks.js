@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles.css";
 import { Link } from "react-router-dom";
 
-function Home() {
+function HomeAttacks() {
   return (
     <div className="home">
       <h1 className="tittle">WHAWHAI</h1>
@@ -11,19 +11,19 @@ function Home() {
         <input className="player__name" placeholder="$WARRIOR-NAME" />
       </div>
       <div className="attacks__column">
-        <button className="attack" style={{ background: "#FFF5CD" }}>
-          <Link to="/Home_Attacks" className="attack_link">
-            Attack For Round #1
-          </Link>
-        </button>
-        <button className="attack" style={{ background: "#FFEC9B" }}>
-          <Link to="/Home_Attacks" className="attack_link">
-            Attack For Round #2
+        <button className="attack" style={{ background: "#73FFA0" }}>
+          <Link to="/" className="attack_link">
+            Current Selected Attack
           </Link>
         </button>
         <button className="attack" style={{ background: "#FFE269" }}>
-          <Link to="/Home_Attacks" className="attack_link">
-            Attack For Round #3
+          <Link to="/" className="attack_link">
+            Attack
+          </Link>
+        </button>
+        <button className="attack" style={{ background: "#FFEC9B" }}>
+          <Link to="/" className="attack_link">
+            Hovereed Attack
           </Link>
         </button>
         <button className="start__game">FIGHT!!!</button>
@@ -32,4 +32,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeAttacks;

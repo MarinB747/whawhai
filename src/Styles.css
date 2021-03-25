@@ -59,5 +59,32 @@
 }
 
 .attack {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  text-align: justify;
+  border-width: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  font-family: "Roboto" sans-serif;
+  font-weight: bolder;
+  color: #434343;
+}
+
+.start__game {
+  margin-top: 50px;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 10ch;
+  font-family: "Bangers";
+  letter-spacing: 0.1rem;
+  background-color: #ffdf59;
+  border-width: 0;
+  align-self: center;
+  color: #ff504d;
+}
+
+.attack_link {
+  color: #434343;
+  text-decoration: none;
 }
