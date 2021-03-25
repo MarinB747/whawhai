@@ -6,7 +6,8 @@
 .app {
   display: flex;
   background-color: #ff504d;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   width: 100%;
   justify-content: center;
 }
@@ -87,4 +88,24 @@
 .attack_link {
   color: #434343;
   text-decoration: none;
+}
+
+.error_header {
+  background-color: #ff504d;
+  text-align: center;
+  color: white;
+}
+.error_body {
+  background-color: #ffdf59;
+  text-align: center;
+  color: #ff504d;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+button.close {
+  color: white;
+  opacity: 1;
+  font-size: 2rem;
+  font-weight: bolder;
 }
