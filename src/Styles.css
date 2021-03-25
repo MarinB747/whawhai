@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  background-color: #ff504d;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.tittle {
+  color: #ffdf59;
+  font-size: 12rem;
+  font-family: "Bangers", cursive;
+  letter-spacing: 1rem;
+  margin-top: 4rem;
+}
+.player__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.avatar {
+  background-image: url("./avatars/avatar_marvin.svg");
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border-color: #ff504d;
+  margin-right: 1rem;
+}
+.player__name {
+  background-color: #ff504d;
+  border-top-width: 0;
+  border-bottom-width: 2;
+  border-color: #ff504d transparent;
+  border-bottom-color: #ffdf59;
+  border-top-color: #ff504d transparent;
+  color: #ffdf59;
+  justify-content: center;
+  width: 11.5ch;
+  font-size: 5.5rem;
+}
+
+.player__name::placeholder {
+  color: #ffdf59;
+  font-family: "Bangers";
+  letter-spacing: 0.2rem;
+}
+
+.attacks__column {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.attack {
+  font-size: 3.5rem;
+}
