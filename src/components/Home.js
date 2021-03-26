@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../Styles.css";
 import { Link, useHistory } from "react-router-dom";
-import { fetchWarriorData } from "./API";
 import ModalError from "../components/ModalError";
 
 function Home() {
@@ -10,8 +9,6 @@ function Home() {
   const [message, setMessage] = useState("");
   const [input, setInput] = useState("");
   const [modalShow, setModalShow] = useState(false);
-  const [selected, setSelected] = useState();
-  const [show, setShow] = useState(false);
   const history = useHistory();
   const warrior = "selected";
   const attack = "selected";
@@ -48,7 +45,7 @@ function Home() {
           onInput={(e) => setInput(e.target.value)}
         />
       </div>
-      <div style={{ textAlign: "center" }}>
+      <div className="validation__wraper">
         <text
           className={`message ${isValid ? "success" : "error"}`}
           style={{ color: "#FFDF59", fontSize: "2rem" }}

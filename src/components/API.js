@@ -1,6 +1,3 @@
-import React from "react";
-import axios from "axios";
-
 export const fetchWarriorData = async () => {
   const requestOptions = {
     method: "POST",
@@ -12,7 +9,7 @@ export const fetchWarriorData = async () => {
       id: 1,
       method: "Status",
       params: {
-        WarriorType: "",
+        id: "0f230b20-21d5-47bd-a8a2-d49f97433126",
       },
     }),
   };
@@ -21,5 +18,4 @@ export const fetchWarriorData = async () => {
     requestOptions
   );
   const data = await response.json();
-  console.log(data);
 };

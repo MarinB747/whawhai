@@ -109,3 +109,7 @@ button.close {
   font-size: 2rem;
   font-weight: bolder;
 }
+
+.validation__wraper {
+  text-align: center;
+}
